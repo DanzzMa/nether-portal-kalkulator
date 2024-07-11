@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nether Portal Calculator</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Nether Portal Calculator</h1>
+    </header>
+    <main>
+        <div class="calculator">
+            <section class="input-section">
+                <h2>Overworld to Nether</h2>
+                <form id="overworld-form">
+                    <label for="overworld-x">Overworld X:</label>
+                    <input type="number" id="overworld-x" required>
+                    <label for="overworld-y">Overworld Y:</label>
+                    <input type="number" id="overworld-y" required>
+                    <label for="overworld-z">Overworld Z:</label>
+                    <input type="number" id="overworld-z" required>
+                    <button type="button" onclick="calculateNether()">Calculate Nether Coordinates</button>
+                </form>
+                <p id="nether-result" class="result"></p>
+            </section>
+            <section class="input-section">
+                <h2>Nether to Overworld</h2>
+                <form id="nether-form">
+                    <label for="nether-x">Nether X:</label>
+                    <input type="number" id="nether-x" required>
+                    <label for="nether-y">Nether Y:</label>
+                    <input type="number" id="nether-y" required>
+                    <label for="nether-z">Nether Z:</label>
+                    <input type="number" id="nether-z" required>
+                    <button type="button" onclick="calculateOverworld()">Calculate Overworld Coordinates</button>
+                </form>
+                <p id="overworld-result" class="result"></p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Made by Danma_</p>
+    </footer>
+    <script src="scripts/sripts.js"></script>
+</body>
+</html>
